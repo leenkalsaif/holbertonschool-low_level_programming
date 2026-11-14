@@ -21,3 +21,4 @@ This project covers pointers to pointers, multidimensional arrays and common str
 | `3-strspn.c` | `_strspn`: gets the length of a prefix substring |
 | `4-strpbrk.c` | `_strpbrk`: searches a string for any of a set of bytes |
 | `5-strstr.c` | `_strstr`: locates a substring |
+| `7-print_chessboard.c` | `print_chessboard`: prints the chessboard |
