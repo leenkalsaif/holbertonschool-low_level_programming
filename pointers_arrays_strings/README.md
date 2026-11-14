@@ -17,3 +17,4 @@ Low-level programming project covering pointers, arrays and strings.
 - 100-atoi.c: converts a string to an integer
 - 0-strcat.c: concatenates two strings
 - 1-strncat.c: concatenates two strings using at most n bytes of src
+- 2-strncpy.c: copies a string, like strncpy
