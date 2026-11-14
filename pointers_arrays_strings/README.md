@@ -12,3 +12,4 @@ Low-level programming project covering pointers, arrays and strings.
 - 5-rev_string.c: reverses a string
 - 6-puts2.c: prints every other character of a string
 - 7-puts_half.c: prints the second half of a string
+- 8-print_array.c: prints n elements of an array of integers
