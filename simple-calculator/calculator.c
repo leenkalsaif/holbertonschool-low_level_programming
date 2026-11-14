@@ -22,7 +22,7 @@ void print_menu(void)
  *
  * Return: the sum of a and b
  */
-int add(int a, int b)
+double add(double a, double b)
 {
 	return (a + b);
 }
@@ -34,7 +34,7 @@ int add(int a, int b)
  *
  * Return: the result of a - b
  */
-int subtract(int a, int b)
+double subtract(double a, double b)
 {
 	return (a - b);
 }
@@ -46,9 +46,53 @@ int subtract(int a, int b)
  *
  * Return: the product of a and b
  */
-int multiply(int a, int b)
+double multiply(double a, double b)
 {
 	return (a * b);
+}
+
+/**
+ * divide - divides two numbers
+ * @a: dividend
+ * @b: divisor (must not be zero)
+ *
+ * Return: the result of a / b
+ */
+double divide(double a, double b)
+{
+	return (a / b);
+}
+
+/**
+ * calculate - asks for A and B, then prints the result
+ * @choice: the operation chosen (1 to 4)
+ *
+ * Return: 0 on success, 1 if the input is not a number
+ */
+int calculate(int choice)
+{
+	double a;
+	double b;
+
+	printf("A: ");
+	if (scanf("%lf", &a) != 1)
+		return (1);
+	printf("B: ");
+	if (scanf("%lf", &b) != 1)
+		return (1);
+
+	if (choice == 1)
+		printf("Result: %.10g\n", add(a, b));
+	else if (choice == 2)
+		printf("Result: %.10g\n", subtract(a, b));
+	else if (choice == 3)
+		printf("Result: %.10g\n", multiply(a, b));
+	else if (b == 0)
+		printf("Error: division by zero\n");
+	else
+		printf("Result: %.10g\n", divide(a, b));
+
+	return (0);
 }
 
 /**
@@ -59,8 +103,6 @@ int multiply(int a, int b)
 int main(void)
 {
 	int choice = -1;
-	int a;
-	int b;
 
 	print_menu();
 
@@ -72,23 +114,10 @@ int main(void)
 
 		if (choice == 0)
 			printf("Bye!\n");
-		else if (choice >= 1 && choice <= 3)
-		{
-			printf("A: ");
-			if (scanf("%d", &a) != 1)
-				return (1);
-			printf("B: ");
-			if (scanf("%d", &b) != 1)
-				return (1);
-			if (choice == 1)
-				printf("Result: %d\n", add(a, b));
-			else if (choice == 2)
-				printf("Result: %d\n", subtract(a, b));
-			else
-				printf("Result: %d\n", multiply(a, b));
-		}
 		else if (choice < 0 || choice > 4)
 			printf("Invalid choice\n");
+		else if (calculate(choice) != 0)
+			return (1);
 	}
 
 	return (0);
