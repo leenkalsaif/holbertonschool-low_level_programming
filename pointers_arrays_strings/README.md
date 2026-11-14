@@ -19,3 +19,4 @@ Low-level programming project covering pointers, arrays and strings.
 - 1-strncat.c: concatenates two strings using at most n bytes of src
 - 2-strncpy.c: copies a string, like strncpy
 - 3-strcmp.c: compares two strings, like strcmp
+- 4-rev_array.c: reverses the content of an array of integers
