@@ -13,7 +13,6 @@ void print_menu(void)
 	printf("3) Multiply\n");
 	printf("4) Divide\n");
 	printf("0) Quit\n");
-	printf("Choice: ");
 }
 
 /**
@@ -23,14 +22,21 @@ void print_menu(void)
  */
 int main(void)
 {
-	int choice;
+	int choice = -1;
 
 	print_menu();
-	if (scanf("%d", &choice) != 1)
-		return (1);
 
-	if (choice == 0)
-		printf("Bye!\n");
+	while (choice != 0)
+	{
+		printf("Choice: ");
+		if (scanf("%d", &choice) != 1)
+			return (1);
+
+		if (choice == 0)
+			printf("Bye!\n");
+		else if (choice < 0 || choice > 4)
+			printf("Invalid choice\n");
+	}
 
 	return (0);
 }

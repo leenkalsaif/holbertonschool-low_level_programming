@@ -14,3 +14,5 @@ cat README.md
 
 - Displays a menu
 - Quit with option `0`
+- Menu loops until the user quits
+- Invalid choices print `Invalid choice`
