@@ -18,3 +18,4 @@ cat README.md
 - Invalid choices print `Invalid choice`
 - Addition (option `1`): prompts for `A` and `B`, prints `Result: <value>`
 - Subtraction (option `2`): prints `A - B`
+- Multiplication (option `3`): prints `A * B`
