@@ -16,3 +16,4 @@ cat README.md
 - Quit with option `0`
 - Menu loops until the user quits
 - Invalid choices print `Invalid choice`
+- Addition (option `1`): prompts for `A` and `B`, prints `Result: <value>`
