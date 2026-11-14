@@ -15,3 +15,4 @@ Low-level programming project covering pointers, arrays and strings.
 - 8-print_array.c: prints n elements of an array of integers
 - 9-strcpy.c: copies a string to a buffer, including the null byte
 - 100-atoi.c: converts a string to an integer
+- 0-strcat.c: concatenates two strings
