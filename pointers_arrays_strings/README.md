@@ -22,3 +22,4 @@ This project covers pointers to pointers, multidimensional arrays and common str
 | `4-strpbrk.c` | `_strpbrk`: searches a string for any of a set of bytes |
 | `5-strstr.c` | `_strstr`: locates a substring |
 | `7-print_chessboard.c` | `print_chessboard`: prints the chessboard |
+| `8-print_diagsums.c` | `print_diagsums`: prints the sum of the two diagonals of a square matrix |
