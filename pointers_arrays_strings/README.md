@@ -17,3 +17,4 @@ This project covers pointers to pointers, multidimensional arrays and common str
 | `main.h` | Header file with all function prototypes |
 | `0-memset.c` | `_memset`: fills memory with a constant byte |
 | `1-memcpy.c` | `_memcpy`: copies memory area |
+| `2-strchr.c` | `_strchr`: locates a character in a string |
