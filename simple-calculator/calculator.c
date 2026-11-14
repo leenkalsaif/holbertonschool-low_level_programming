@@ -28,6 +28,18 @@ int add(int a, int b)
 }
 
 /**
+ * subtract - subtracts two numbers
+ * @a: first number
+ * @b: second number
+ *
+ * Return: the result of a - b
+ */
+int subtract(int a, int b)
+{
+	return (a - b);
+}
+
+/**
  * main - entry point of the calculator
  *
  * Return: Always 0.
@@ -35,7 +47,8 @@ int add(int a, int b)
 int main(void)
 {
 	int choice = -1;
-	int a, b;
+	int a;
+	int b;
 
 	print_menu();
 
@@ -47,7 +60,7 @@ int main(void)
 
 		if (choice == 0)
 			printf("Bye!\n");
-		else if (choice == 1)
+		else if (choice == 1 || choice == 2)
 		{
 			printf("A: ");
 			if (scanf("%d", &a) != 1)
@@ -55,7 +68,10 @@ int main(void)
 			printf("B: ");
 			if (scanf("%d", &b) != 1)
 				return (1);
-			printf("Result: %d\n", add(a, b));
+			if (choice == 1)
+				printf("Result: %d\n", add(a, b));
+			else
+				printf("Result: %d\n", subtract(a, b));
 		}
 		else if (choice < 0 || choice > 4)
 			printf("Invalid choice\n");

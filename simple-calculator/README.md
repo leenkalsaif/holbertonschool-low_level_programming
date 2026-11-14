@@ -17,3 +17,4 @@ cat README.md
 - Menu loops until the user quits
 - Invalid choices print `Invalid choice`
 - Addition (option `1`): prompts for `A` and `B`, prints `Result: <value>`
+- Subtraction (option `2`): prints `A - B`
