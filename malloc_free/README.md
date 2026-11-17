@@ -20,3 +20,4 @@ This project covers dynamic memory allocation in C using `malloc` and `free`.
 
 - `0-create_array.c`: creates an array of chars and initializes it with a specific chari.
 - `1-strdup.c`: returns a pointer to a newly allocated copy of a string
+- `2-str_concat.c`: concatenates two strings into a newly allocated string.
