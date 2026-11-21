@@ -1,3 +1,6 @@
-# structures_typedef
+# Low Level Programming
 
-This project covers structures and typedef in C.
+Projects from the Holberton School low-level programming curriculum, written in C.
+  # structures_typedef
+
+  This project covers structures and typedef in C.
